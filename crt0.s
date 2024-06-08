@@ -284,4 +284,4 @@ sounds_data:
 
 
 .segment "CHARS"
-	;.incbin "FNAF.chr"
+	.incbin "FNAF.chr"	; Espaço que vai ter as informações do FNAF
