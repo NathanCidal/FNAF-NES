@@ -13,6 +13,7 @@ ca65 %name%.s -g
 ld65 -C nrom_32k_vert.cfg -o %name%.nes crt0.o %name%.o nes.lib -Ln labels.txt
 
 del *.o
+md BUILD
 
 move /Y labels.txt BUILD\ 
 move /Y %name%.s BUILD\ 
