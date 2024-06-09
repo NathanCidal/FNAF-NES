@@ -27,7 +27,7 @@ crt0.o: crt0.s FNAF.chr
 $(NAME).o: $(NAME).s
 	$(CA65) $(NAME).s -g
 
-$(NAME).s: $(NAME).c #Sprite.h collide.h
+$(NAME).s: $(NAME).c NES_ST/titleScreen.h #Sprite.h collide.h
 	$(CC65) -Oirs $(NAME).c --add-source
 
 clean:
